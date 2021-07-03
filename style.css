@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container{
+    height: 100vh;
+    width: 100vh;
+    background-color: blueviolet;
+}
+
+#calculator{
+    height: 500px;
+    width: 350px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: grey;
+    box-shadow: 10px 10px 15px;
+    position: relative;
+    top: 40px;
+}
+#history{
+    height: 20%;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+}
+#history_value{
+    font-size: 16px;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+#output_value{
+    font-size: 50px;
+    font-weight: 700;
+    color: turquoise;
+}
+#keybord{
+    height: 80%;
+    
+}
+#keybord>.number,#keybord.oporator{
+    float: left;
+    height: 25%;
+    width: 33.33%;
+    background-color: rgb(145, 136, 136);
+    border:1px solid rgb(163, 152, 152);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: 0;
+
+}
+#keybord>.number:hover,#keybord.oporator:hover{
+ background-color: turquoise;
+ transform: scale(1.1);
+}
+#keybord>.number:active,#keybord.oporator:active{
+ font-size: 10px;
+}
+
+#key_oporator{
+    height: auto;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 25%;
+    left: -30px;
+}
+.oporator{
+    height: 50px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    outline: 0;
+}
+
+.oporator:hover{
+background-color: rgb(145, 136, 136);
+}
+.oporator:active{
+font-size: 8px;
+}
