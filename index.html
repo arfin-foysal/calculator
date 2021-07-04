@@ -7,38 +7,47 @@
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
 </head>
+
 <body>
-    <div id="container">
-        <div id="calculator"> 
-          <div id="history">
-              <p id="history_value"></p>
-              <p id="output_value">1</p>
-          </div>
-              <div id="keybord"> 
-                <button class="number" id="7">7</button>
-                <button class="number" id="8">8</button>
-                <button class="number" id="9">9</button>
-                <button class="number" id="4">4</button>
-                <button class="number" id="5">5</button>
-                <button class="number" id="6">6</button>
-                <button class="number" id="1">1</button>
-                <button class="number" id="2">2</button>
-                <button class="number" id="3">3</button>
-                <button class="number" id=".">.</button>
-                <button class="number" id="0">0</button>
-                <button class="number" id=" = ">=</button>
-                
-              </div>
-              <div id="key_oporator">
-                  <button class="oporator" id="clear">C</button>
-                  <button class="oporator" id="backspace">CE</button>
-                  <button class="oporator" id="/">/</button>
-                  <button class="oporator" id="*">*</button>
-                  <button class="oporator" id="+">+</button>
-                  <button class="oporator" id="-">-</button>
-              </div>
+    <div class="container">
+        <form name="calculatorForm">
+            <div class="resultscreen">
+                <div class="heading">Calculator</div>
+                <input type="text" name="evalresult"/>
             </div>
+            <div class="buttons">
+                <div class="line">
+                    <input type="button" name="btn7" value="7" onClick="valuecal(btn7.value)"/>
+                    <input type="button" name="btn8" value="8" onClick="valuecal(btn8.value)"/>
+                    <input type="button" name="btn9" value="9" onClick="valuecal(btn9.value)"/>
+                    <input type="button" name="btndivision" value="/" onClick="valuecal(btndivision.value)"/>
+                </div>
+                
+                <div class="line">
+                    <input type="button" name="btn4" value="4" onClick="valuecal(btn4.value)"/>
+                    <input type="button" name="btn5" value="5" onClick="valuecal(btn5.value)"/>
+                    <input type="button" name="btn6" value="6" onClick="valuecal(btn6.value)"/>
+                    <input type="button" name="btnmultiply" value="*" onClick="valuecal(btnmultiply.value)"/>
+                </div>
+                
+                <div class="line">
+                    <input type="button" name="btn1" value="1" onClick="valuecal(btn1.value)"/>
+                    <input type="button" name="btn2" value="2" onClick="valuecal(btn2.value)"/>
+                    <input type="button" name="btn3" value="3" onClick="valuecal(btn3.value)"/>
+                    <input type="button" name="btnsubtract" value="-" onClick="valuecal(btnsubtract.value)"/>
+                </div>
+                
+                <div class="line">
+                    <input type="button" name="btn0" value="0" onClick="valuecal(btn0.value)"/>
+                    <input type="button" name="btnDot" value="." onClick="valuecal(btnDot.value)"/>
+                    <input type="button" name="btnAddition" value="+" onClick="valuecal(btnAddition.value)"/>
+                    <input type="button" name="result" value="=" onClick="evalresult.value=eval(evalresult.value)"/>
+                </div>
+            </div>
+        </form>
     </div>
+
     <script src="app.js"></script>
+
 </body>
 </html>
